@@ -15,7 +15,7 @@ fetch("./assets/js/watchesJson.json")
 
             const newImg = document.createElement("img")
             newArticle.append(newImg)
-            newImg.setAttribute("src", `./assets/img/${[i+1]}.jpg` )
+            newImg.setAttribute("src", `./assets/img/${data.watches[i].imgUrl}` )
             newImg.setAttribute("alt", data.watches[i].name)
 
             const newP = document.createElement("p")
